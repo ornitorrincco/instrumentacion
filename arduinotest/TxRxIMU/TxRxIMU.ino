@@ -15,7 +15,8 @@ void loop() {
   }
   if (sensorData.length() >0) {
    Serial.println(sensorData);  //output the string
-   Serial.readString()=""; //resets reString for the next iteration of the loop
+   //Serial.readString()=""; //resets reString for the next iteration of the loop
+
   } 
 } 
 
