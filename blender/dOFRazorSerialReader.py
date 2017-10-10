@@ -16,8 +16,7 @@ def dOF9Razor(data):
         accelerometer = data_DOF[3:6]
         magnetoscope = data_DOF[6:9]
         magnetoscope[2] = magnetoscope[2].split("#")[0]
-        # outputString = "acelerometer = " + accelerometer + ' giroscope = ' + giroscope + ' magnetoscope = ' + magnetoscope
-        return accelerometer, giroscope, magnetoscope
+        return float(accelerometer), float(giroscope), float(magnetoscope)
 
 while True:
     data_string = arduino.readline()
